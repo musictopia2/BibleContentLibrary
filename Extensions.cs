@@ -10,4 +10,11 @@ public static partial class Extensions
     {
         return services.RegisterBookDataServices<NewLivingTranslationService>();
     }
+    public static IServiceCollection RegisterFlexibleTranslationServices<T>(this IServiceCollection services)
+        where T: class, IFlexibleDefaultTranslationService
+    {
+        services.AddScoped<IFlexibleDefaultTranslationService, T>()
+            .RegisterBookDataServices<FlexibleTranslationService>();
+        return services;
+    }
 }
