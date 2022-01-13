@@ -12,7 +12,7 @@ public abstract class MainTranslationService : ITranslationService
     }
     internal static async Task PopulateTranslationsAsync()
     {
-        if (Translations.Count == 0)
+        if (Translations.Count > 0) //try this to fix the translation problem.
         {
             return;
         }
