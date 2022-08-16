@@ -5,3 +5,4 @@ global using rr = BibleContentLibrary.Resources.TranslationList;
 global using BibleContentLibrary.TranslationServices;
 global using CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 global using CommonBasicLibraries.BasicDataSettingsAndProcesses;
+global using Microsoft.Extensions.DependencyInjection;

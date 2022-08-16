@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-namespace BibleContentLibrary;
+﻿namespace BibleContentLibrary;
 public static partial class Extensions
 {
     public static IServiceCollection RegisterICBServices(this IServiceCollection services)
