@@ -16,7 +16,7 @@ public abstract class MainTranslationService : ITranslationService
         {
             return;
         }
-        Translations = await rr.GetResourceAsync<BasicList<TranslationInformation>>();
+        Translations = await rr1.GetResourceAsync<BasicList<TranslationInformation>>();
     }
     internal static bool TranslationSupported(string abb) //iffy.
     {
