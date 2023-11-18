@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<Version>7.0.1</Version>
@@ -16,15 +16,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BibleDatabaseLibrary" Version="7.0.2" />
-    <PackageReference Include="BibleICBTranslationLibrary" Version="7.0.1" />
-    <PackageReference Include="BibleKJVTranslationLibrary" Version="7.0.1" />
-    <PackageReference Include="BibleNIVTranslationLibrary" Version="7.0.1" />
-    <PackageReference Include="BibleNKJVTranslationLibrary" Version="7.0.1" />
-    <PackageReference Include="BibleNLTTranslationLibrary" Version="7.0.1" />
+    <PackageReference Include="BibleDatabaseLibrary" Version="8.0.1" />
+    <PackageReference Include="BibleICBTranslationLibrary" Version="8.0.1" />
+    <PackageReference Include="BibleKJVTranslationLibrary" Version="8.0.1" />
+    <PackageReference Include="BibleNIVTranslationLibrary" Version="8.0.1" />
+    <PackageReference Include="BibleNKJVTranslationLibrary" Version="8.0.1" />
+    <PackageReference Include="BibleNLTTranslationLibrary" Version="8.0.1" />
     <PackageReference Include="BibleTranslationsGenerator" Version="1.0.1" PrivateAssets="all" />
     <PackageReference Include="JsonDeserializeResourceSourceGenerator" Version="1.0.3" PrivateAssets="all" />
-	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
