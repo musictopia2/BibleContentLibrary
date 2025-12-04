@@ -1,19 +1,23 @@
 ﻿namespace BibleContentLibrary;
 public static partial class Extensions
 {
-    public static IServiceCollection RegisterICBServices(this IServiceCollection services)
+    extension (IServiceCollection services)
     {
-        return services.RegisterBookDataServices<ChildrenTranslationService>();
+        public IServiceCollection RegisterICBServices()
+        {
+            return services.RegisterBookDataServices<ChildrenTranslationService>();
+        }
+        public IServiceCollection RegisterNLTServices()
+        {
+            return services.RegisterBookDataServices<NewLivingTranslationService>();
+        }
+        public IServiceCollection RegisterFlexibleTranslationServices<T>()
+            where T : class, IFlexibleDefaultTranslationService
+        {
+            services.AddScoped<IFlexibleDefaultTranslationService, T>()
+                .RegisterBookDataServices<FlexibleTranslationService>();
+            return services;
+        }
     }
-    public static IServiceCollection RegisterNLTServices(this IServiceCollection services)
-    {
-        return services.RegisterBookDataServices<NewLivingTranslationService>();
-    }
-    public static IServiceCollection RegisterFlexibleTranslationServices<T>(this IServiceCollection services)
-        where T: class, IFlexibleDefaultTranslationService
-    {
-        services.AddScoped<IFlexibleDefaultTranslationService, T>()
-            .RegisterBookDataServices<FlexibleTranslationService>();
-        return services;
-    }
+    
 }

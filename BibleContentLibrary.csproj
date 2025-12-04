@@ -15,14 +15,14 @@
     <AdditionalFiles Include="Resources\TranslationList.json" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="BibleDatabaseLibrary" Version="10.0.1" />
-    <PackageReference Include="BibleICBTranslationLibrary" Version="10.0.1" />
-    <PackageReference Include="BibleKJVTranslationLibrary" Version="10.0.1" />
-    <PackageReference Include="BibleNIVTranslationLibrary" Version="10.0.1" />
-    <PackageReference Include="BibleNKJVTranslationLibrary" Version="10.0.1" />
-    <PackageReference Include="BibleNLTTranslationLibrary" Version="10.0.1" />
-    <PackageReference Include="BibleTranslationsGenerator" Version="1.0.1" PrivateAssets="all" />
-    <PackageReference Include="JsonDeserializeResourceSourceGenerator" Version="1.0.3" PrivateAssets="all" />
+    <PackageReference Include="BibleDatabaseLibrary" Version="10.0.8" />
+    <PackageReference Include="BibleICBTranslationLibrary" Version="10.0.8" />
+    <PackageReference Include="BibleKJVTranslationLibrary" Version="10.0.8" />
+    <PackageReference Include="BibleNIVTranslationLibrary" Version="10.0.8" />
+    <PackageReference Include="BibleNKJVTranslationLibrary" Version="10.0.8" />
+    <PackageReference Include="BibleNLTTranslationLibrary" Version="10.0.8" />
+    <PackageReference Include="BibleTranslationsGenerator" Version="1.0.3" PrivateAssets="all" />
+    <PackageReference Include="JsonDeserializeResourceSourceGenerator" Version="1.0.6" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
